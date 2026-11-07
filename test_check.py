@@ -27,3 +27,11 @@ def test_buck():
     ]}
     
     assert storage_buckets(config) == []
+    
+def test_buck():
+    config = {"storage_buckets": [
+        {"name": "public-logs", "public": True, "encrypted": False}
+    ]}
+    
+    assert storage_buckets(config) == 2
+    
