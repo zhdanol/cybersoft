@@ -1,0 +1,12 @@
+{
+  "storage_buckets": [
+    {"name": "public-logs", "public": true, "encrypted": false},
+    {"name": "backups", "public": false, "encrypted": true},
+    {"name": "user-uploads", "public": true, "encrypted": true}
+  ],
+  "firewall_rules": [
+    {"id": "fw-1", "port": 22, "source": "0.0.0.0/0"},
+    {"id": "fw-2", "port": 443, "source": "0.0.0.0/0"},
+    {"id": "fw-3", "port": 3389, "source": "10.0.0.0/8"}
+  ]
+}
